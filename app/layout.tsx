@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Header from "@/components/Header";  
-import { BackgroundBeamsWithCollision } from "@/components/backgroundBeams";
+import Header from "@/components/header";  
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -32,10 +31,9 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header />
-        {/* <BackgroundBeamsWithCollision> */}
         {children}
-        {/* </BackgroundBeamsWithCollision> */}
       </body>
     </html>
   );
 }
+
