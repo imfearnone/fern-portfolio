@@ -1,11 +1,12 @@
 "use client"
 
-import GridBackground from "@/components/gridBackground";
-import Projects from "@/components/projects";
-import About from "@/components/about";
-import Contacts from "@/components/contacts";
-import Footer from "@/components/footer";
-import Hero from "@/components/hero";
+import GridBackground from "@/components/GridBackground";
+import Projects from "@/components/Projects";
+import About from "@/components/About";
+import Contacts from "@/components/Contacts";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import Image from "next/image";
 
 export default function Page() {
   return (  
@@ -29,10 +30,12 @@ export default function Page() {
 
       <div className="w-[80%] flex flex-col justify-center relative">
         <div className="w-full h-full absolute">
-          <img
+          <Image
             src="/footer-grid.svg"
             alt="grid"
             className="object-cover object-center w-full h-full opacity-100%"
+            width={500}
+            height={50}
           />
         </div>
         

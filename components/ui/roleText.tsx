@@ -44,7 +44,7 @@ export default function RoleText() {
     }, 3000); 
 
     return () => clearInterval(interval); 
-  }, []);
+  }, [roles.length]);
 
   return (
     <div className="text-2xl sm:text-2xl md:text-2xl md:mt-4 lg:text-3xl xl:text-4xl font-bold text-center overflow-hidden">

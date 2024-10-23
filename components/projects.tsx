@@ -1,10 +1,11 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa";
-import { projectlists } from "@/components/data";
+import { projectlists } from "@/data";
 import {motion} from 'framer-motion';
-import { slideInFromLeft } from './animation/animation';
+import { slideInFromLeft } from '../animation/animation';
+import Image from 'next/image';
 
-export default function projects() {
+export default function Projects() {
   return (
     <div className="w-full flex flex-col space-y-10">
         {projectlists.map((project, index) => (
@@ -17,9 +18,11 @@ export default function projects() {
                 variants={slideInFromLeft} 
             >
                 <section className="flex bg-white justify-center rounded-t-3xl lg:w-1/2 lg:rounded-l-3xl lg:rounded-tr-none">
-                    <img 
+                    <Image 
                         src={project.image} 
                         alt={project.title} 
+                        width={500}
+                        height={50}
                         className={`object-contain rounded-t-2xl lg:rounded-l-2xl lg:rounded-tr-none xl:object-cover  ${
                             project.title === 'Barangay Comembo Mobile Application (Admin)' ? '' : 
                             project.title === 'Barangay Comembo Mobile Application (User)' ? 'h-[400px] lg:h-[552px] xl:h-[504px] 2xl:h-[380px]' : 

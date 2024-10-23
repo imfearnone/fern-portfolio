@@ -1,11 +1,11 @@
 import React from 'react'
-import AnimatedImage from './ui/animatedImage'
-import { techImages } from './data/index'
+import { techImages } from '../data/index'
 import { motion } from 'framer-motion'
-import { slideInFromLeft } from './animation/animation'
+import { slideInFromLeft } from '../animation/animation'
+import AnimatedImage from './ui/AnimatedImage'
+import Image from 'next/image'
 
-
-export default function about() {
+export default function Aout() {
   return (
     <div className="w-full flex flex-col xl:flex-row text-primarybg">
         <section className="flex flex-col p-4 order-2  xl:order-1 xl:w-1/2 xl:rounded-b-none xl:rounded-l-2xl xl:rounded-bl-2xl bg-white rounded-b-2xl">
@@ -57,7 +57,7 @@ export default function about() {
                 <div className='flex flex-wrap justify-center p-2 mb-10 space-x-5'>
                     {techImages.map((tech, index) => (
                         <div key={index} className='flex flex-col items-center text-primarybg m-2'>
-                            <img src={tech.src} alt={tech.alt} className='h-10 w-10' />
+                            <Image src={tech.src} alt={tech.alt} className='h-10 w-10' width={500} height={50}/>
                             <span>{tech.alt}</span>
                         </div>
                     ))}
@@ -68,10 +68,12 @@ export default function about() {
         <section className="bg-secondarybg p-4 order-1 rounded-t-2xl xl:order-2 xl:w-1/2 xl:rounded-t-none xl:rounded-r-2xl">
             <div className="justify-center items-center rounded-t-2xl h-72 xl:h-full relative">
                 <div className="w-full h-full absolute">
-                    <img
+                    <Image
                         src="/footer-grid.svg"
                         alt="grid"
                         className="object-cover object-center w-full h-full opacity-100%"
+                        width={500}
+                        height={50}
                     />
                 </div>
                 <AnimatedImage />  

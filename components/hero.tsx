@@ -1,19 +1,18 @@
-"use client"
-
 import { useState } from "react";
-import { TextGenerateEffect } from '@/components/ui/textGenerateEffect';
-import { TypewriterEffect, TypewriterEffectSmooth } from '@/components/ui/typeWriterEffect';
-import { FloatingDock } from "@/components/ui/floatingDock";
-import AnimatedBlob from "@/components/ui/animatedBlob"
-import RoleText from "@/components/ui/roleText";
+import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect';
+import { TypewriterEffect} from '@/components/ui/TypeWriterEffect';
+import { FloatingDock } from "@/components/ui/FloatingDock";
+import AnimatedBlob from "@/components/ui/AnimatedBlob"
+import RoleText from "@/components/ui/RoleText";
 import { motion } from "framer-motion";
-import { slideInFromRight } from "@/components/animation/animation";
-import { items, words } from "@/components/data";
+import { slideInFromRight } from "@/animation/animation";
+import { items, words } from "@/data";
 import { RiScrollToBottomFill  } from "react-icons/ri";
 import Link from "next/link";
+import Image from "next/image";
 
 
-export default function hero() {
+export default function Hero() {
   const [textAnimationDone, setTextAnimationDone] = useState(false); 
   const [textWritterEffectDone, setWritterEffectDone] = useState(false); 
 
@@ -66,10 +65,12 @@ export default function hero() {
             <div className="relative mx-auto w-full flex items-center justify-center ">
               <AnimatedBlob />
               <div className="relative w-100 h-100 overflow-hidden rounded-full">
-                <img
+                <Image
                   src="/fern.jpg"
                   alt="Fern"
                   className="relative z-10 w-full h-full object-cover rounded-full"
+                  width={500}
+                  height={50}
                 />
               </div>
             </div>

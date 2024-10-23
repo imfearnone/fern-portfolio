@@ -1,11 +1,10 @@
-"use client"
 import React, { useEffect, useState } from 'react';
 import {motion} from 'framer-motion';
-import { images } from '../data';
-import { slideInFromLeft } from '../animation/animation';
+import { images } from '../../data';
+import { slideInFromLeft } from '../../animation/animation';
 
 
-export default function animatedImage() {
+export default function AnimatedImage() {
     const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {

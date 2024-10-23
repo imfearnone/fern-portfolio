@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
 import React, { useState, useEffect } from 'react';
 import { IoIosArrowUp } from "react-icons/io";
 
-export default function backToTop() {
+export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
   const [showTooltip, setShowTooltip] = useState(false);
 

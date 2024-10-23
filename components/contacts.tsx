@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react'
 import { FiCopy } from 'react-icons/fi';
-import { slideInFromLeft } from './animation/animation';
+import { slideInFromLeft } from '../animation/animation';
 
 export default function Contacts() {
     const [copied, setCopied] = useState(false);

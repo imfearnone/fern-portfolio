@@ -1,6 +1,6 @@
 import React from 'react'
-import LogoBtn from './ui/logoBtn'
-import BackToTop from './backToTop'
+import LogoBtn from './ui/LogoBtn'
+import BackToTop from './BackToTop'
 
 export default function footer() {
   return (

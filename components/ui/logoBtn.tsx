@@ -6,7 +6,7 @@ const lobster = Lobster({
     subsets: ["latin"],
 })
 
-export default function logoBtn() {
+export default function LogoBtn() {
   return (
     <div className={`font-bold text-2xl ${lobster.className}`}>
         imfearnone

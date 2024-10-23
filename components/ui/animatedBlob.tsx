@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 
-export default function animatedBlob() {
+export default function AnimatedBlob() {
   return (
     <div>
         <motion.svg
