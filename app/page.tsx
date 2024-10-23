@@ -1,12 +1,12 @@
 'use client'
 import React from "react";
-import GridBackground from "@/components/GridBackground";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import About from "@/components/About";
+import GridBackground from "../components/GridBackground";
+import Hero from "../components/Hero";
+import Projects from "../components/Projects";
+import About from "../components/About";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
 import Image from "next/image";
-import Contacts from "@/components/Contacts";
-import Footer from "@/components/Footer";
 
 export default function Page() {
   return (  
