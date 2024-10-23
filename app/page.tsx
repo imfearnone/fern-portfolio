@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image";
-import GridBackground from "@/components/GridBackground";
+import GridBackground from "@/components/gridBackground";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import About from "@/components/About";

@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import React from 'react';
 import DownloadBtn from './DownloadBtn';
 import NavBtn from './NavBtn';
-import GridBackground from '../GridBackground';
+import GridBackground from '@/components/gridBackground';
 
 export default function ToggleMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
