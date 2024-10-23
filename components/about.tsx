@@ -5,7 +5,7 @@ import { slideInFromLeft } from '../animation/animation'
 import AnimatedImage from './ui/AnimatedImage'
 import Image from 'next/image'
 
-export default function Aout() {
+export default function About() {
   return (
     <div className="w-full flex flex-col xl:flex-row text-primarybg">
         <section className="flex flex-col p-4 order-2  xl:order-1 xl:w-1/2 xl:rounded-b-none xl:rounded-l-2xl xl:rounded-bl-2xl bg-white rounded-b-2xl">

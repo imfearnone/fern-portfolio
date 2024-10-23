@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function gridBackground() {
+export default function GridBackground() {
   return (
     <div
         className="h-screen w-full dark:bg-black-100 bg-primarybg dark:bg-grid-white/[0.05] bg-grid-black-100/[0.2]
