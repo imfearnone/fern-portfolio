@@ -1,16 +1,14 @@
-'use client'
-import React from "react";
+import Image from "next/image";
 import GridBackground from "@/components/GridBackground";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 
-export default function Page() {
+export default function Home() {
   return (  
-    <main id="main" className="flex flex-col justify-center items-center p-4">
+    <main className="flex flex-col justify-center items-center p-4">
       <GridBackground />
 
       <section className="flex justify-center items-center w-[80%]">
