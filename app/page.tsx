@@ -1,12 +1,12 @@
-"use client"
-
-import GridBackground from "@/components/GridBackground";
+'use client'
+import React from "react";
 import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Image from "next/image";
+import GridBackground from "@/components/GridBackground";
 
 export default function Page() {
   return (  
