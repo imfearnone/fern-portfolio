@@ -1,19 +1,17 @@
 'use client'
 import React from "react";
 import GridBackground from "@/components/GridBackground";
-import Hero from "../components/Hero";
-import Projects from "../components/Projects";
-import About from "../components/About";
-import Contacts from "../components/Contacts";
-import Footer from "../components/Footer";
+import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
+import About from "@/components/About";
+import Contacts from "@/components/Contacts";
+import Footer from "@/components/Footer";
 import Image from "next/image";
-import BackToTop from "@/components/BackToTop";
 
 export default function Page() {
   return (  
-    <div id="main" className="flex flex-col justify-center items-center p-4">
+    <main id="main" className="flex flex-col justify-center items-center p-4">
       <GridBackground />
-      <BackToTop />
 
       <section className="flex justify-center items-center w-[80%]">
         <Hero />
@@ -50,6 +48,6 @@ export default function Page() {
           <Footer />
         </section>
       </div>
-    </div>
+    </main>
   );
 }
