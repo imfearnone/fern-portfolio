@@ -2,7 +2,7 @@ import React from 'react'
 import { techImages } from '../data/index'
 import { motion } from 'framer-motion'
 import { slideInFromLeft } from '../animation/animation'
-import AnimatedImage from './ui/AnimatedImage'
+import AnimatedImage from './ui/animatedImage'
 import Image from 'next/image'
 
 export default function About() {

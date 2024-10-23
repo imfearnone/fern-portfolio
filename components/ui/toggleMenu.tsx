@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import React from 'react';
-import DownloadBtn from './DownloadBtn';
-import NavBtn from './NavBtn';
+import DownloadBtn from './downloadBtn';
+import NavBtn from './navBtn';
 import GridBackground from '@/components/gridBackground';
 
 export default function ToggleMenu() {
