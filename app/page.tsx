@@ -2,10 +2,10 @@
 import Image from "next/image";
 import GridBackground from "@/components/gridBackground";
 import Hero from "@/components/hero";
-import Projects from "@/components/Projects";
-import About from "@/components/About";
-import Contacts from "@/components/Contacts";
-import Footer from "@/components/Footer";
+import Projects from "@/components/projects";
+import About from "@/components/about";
+import Contacts from "@/components/contacts";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (  
