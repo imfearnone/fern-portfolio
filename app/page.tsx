@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import GridBackground from "../components/GridBackground";
+import GridBackground from "@/components/GridBackground";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
 import About from "../components/About";
