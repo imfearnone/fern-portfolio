@@ -1,11 +1,11 @@
 'use client'
 import Image from "next/image";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import About from "@/components/About";
-import Contacts from "@/components/Contacts";
-import Footer from "@/components/Footer";
-import GridBackground from "@/components/GridBackground";
+import Hero from "@/components/hero";
+import Projects from "@/components/projects";
+import About from "@/components/about";
+import Contacts from "@/components/contacts";
+import Footer from "@/components/footer";
+import GridBackground from "@/components/gridBackground";
 import footerImg from "@/public/footer-grid.svg";
 
 export default function Home() {

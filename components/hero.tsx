@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect';
-import { TypeWriterEffect} from '@/components/ui/TypeWriterEffect';
-import { FloatingDock } from "@/components/ui/FloatingDock";
-import AnimatedBlob from "@/components/ui/AnimatedBlob"
-import RoleText from "@/components/ui/RoleText";
+import { TextGenerateEffect } from '@/components/ui/textGenerateEffect';
+import { TypeWriterEffect} from '@/components/ui/typeWriterEffect';
+import { FloatingDock } from "@/components/ui/floatingDock";
+import AnimatedBlob from "@/components/ui/animatedBlob"
+import RoleText from "@/components/ui/roleText";
 import { motion } from "framer-motion";
 import { slideInFromRight } from "@/animation/animation";
 import { items, words } from "@/data";
