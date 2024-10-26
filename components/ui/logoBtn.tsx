@@ -8,7 +8,7 @@ const lobster = Lobster({
 
 export default function LogoBtn() {
   return (
-    <div className={`font-bold text-2xl ${lobster.className}`}>
+    <div className={`font-bold text-xl md:text-2xl ${lobster.className}`}>
         imfearnone
         <span className="text-secondarybg">
             &nbsp;/&gt; 

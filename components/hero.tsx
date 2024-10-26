@@ -1,15 +1,16 @@
 import { useState } from "react";
-import { TextGenerateEffect } from '@/components/ui/textGenerateEffect';
-import { TypewriterEffect} from '@/components/ui/typeWriterEffect';
-import { FloatingDock } from "@/components/ui/floatingDock";
-import AnimatedBlob from "@/components/ui/animatedBlob"
-import RoleText from "@/components/ui/roleText";
+import { TextGenerateEffect } from '@/components/ui/TextGenerateEffect';
+import { TypeWriterEffect} from '@/components/ui/TypeWriterEffect';
+import { FloatingDock } from "@/components/ui/FloatingDock";
+import AnimatedBlob from "@/components/ui/AnimatedBlob"
+import RoleText from "@/components/ui/RoleText";
 import { motion } from "framer-motion";
 import { slideInFromRight } from "@/animation/animation";
 import { items, words } from "@/data";
 import { RiScrollToBottomFill  } from "react-icons/ri";
-import Link from "next/link";
+import { Link } from 'react-scroll';
 import Image from "next/image";
+import myImage from "@/public/fern.jpg"
 
 
 export default function Hero() {
@@ -35,7 +36,7 @@ export default function Hero() {
 
           {textAnimationDone && (
             <div className="z-100">
-              <TypewriterEffect
+              <TypeWriterEffect
                 words={words}
                 className="text-left justify-center text-4xl mt-5"
                 cursorClassName="text-blue-500"
@@ -57,7 +58,7 @@ export default function Hero() {
 
         <section className="flex items-center justify-center mt-4 sm:mt-8 md:mt-6">
           <motion.div
-            className="w-[85%] sm:w-[70%] md:w-[55%] lg:w-[40%] xl:w-full 2xl:w-full "
+            className="w-[80%] sm:w-[70%] md:w-[55%] lg:w-[40%] xl:w-full 2xl:w-full "
             initial="hidden"
             animate="visible"
             variants={slideInFromRight}
@@ -66,11 +67,9 @@ export default function Hero() {
               <AnimatedBlob />
               <div className="relative w-100 h-100 overflow-hidden rounded-full">
                 <Image
-                  src="/fern.jpg"
+                  src={myImage}
                   alt="Fern"
                   className="relative z-10 w-full h-full object-cover rounded-full"
-                  width={500}
-                  height={50}
                 />
               </div>
             </div>
@@ -79,7 +78,7 @@ export default function Hero() {
         
         <section className="xl:col-span-3 flex items-center justify-center">
           {textWritterEffectDone && (
-            <Link href="/#projects">
+            <Link to="projects" smooth={true} duration={500} offset={-70}>
               <motion.div
                 className="col-span-2 w-full transform -translate-x-1/2 "
                 initial={{ y: 0 }}

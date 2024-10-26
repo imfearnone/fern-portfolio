@@ -7,7 +7,7 @@ export default function DownloadBtn() {
   
   return (
     <a
-      href="/RetardoFernanR_CV.pdf"
+      href="/RetardoFernanR_Resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
       onMouseEnter={() => setIsHovered(true)}

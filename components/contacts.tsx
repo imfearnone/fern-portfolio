@@ -25,17 +25,17 @@ export default function Contacts() {
                 variants={slideInFromLeft} 
             >
                 
-                <span className='flex text-2xl mt-4'>{email}</span>
+                <span className='flex text-sm md:text-lg xl:text-xl mt-5 md:mt-6'>{email}</span>
                 <button 
                     onClick={handleCopyEmail} 
                     className='flex flex-col items-center hover:text-black focus:outline-none'>
-                    <FiCopy className='text-3xl mt-2 ' />
+                    <FiCopy className='text-sm md:text-lg xl:text-xl mt-3 md:mt-4 ' />
                     <span className='mt-10 absolute '>{copied ? 'Copied' : ''}</span>
                 </button>
 
                 <a 
                     href={`mailto:${email}`} 
-                    className='bg-primarybg font-bold text-white shadow-slate-500 shadow-lg hover:text-secondarybg py-3 px-5 rounded-lg focus:outline-none'>
+                    className='bg-primarybg font-bold text-sm md:text-lg xl:text-xl text-white shadow-slate-500 shadow-lg hover:text-secondarybg py-2 px-3 md:py-3 md:px-5 rounded-lg focus:outline-none'>
 
                     Send Email 
                 </a>
