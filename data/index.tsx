@@ -15,7 +15,7 @@ import php from "@/public/php.png";
 import css from "@/public/css.svg";
 import javascript from "@/public/javascript.svg";
 import c from "@/public/c.png";
-import cplusplus from "@/public/cplusplus.png";
+import cplusplus from "@/public/Cplusplus.png";
 import csharp from "@/public/csharp.png";
 import java from "@/public/java.svg";
 import reactjs from "@/public/reactjs.svg";

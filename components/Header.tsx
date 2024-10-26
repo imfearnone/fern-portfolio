@@ -2,10 +2,10 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import LogoBtn from "./ui/LogoBtn";
-import NavBtn from "./ui/NavBtn";
-import DownloadBtn from "./ui/DownloadBtn";
-import ToggleMenu from "./ui/ToggleMenu";
+import LogoBtn from "./ui/logoBtn";
+import NavBtn from "./ui/navBtn";
+import DownloadBtn from "./ui/downloadBtn";
+import ToggleMenu from "./ui/toggleMenu";
 
 const headerItemVariants = {
   hidden: { opacity: 0, y: -20 }, 
