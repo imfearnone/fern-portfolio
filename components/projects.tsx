@@ -28,7 +28,7 @@ export default function Projects() {
                         }`}
                     />
                 </section>
-                <section className="p-4 space-y-2 bg-secondarybg lg:w-1/2 rounded-b-2xl lg:rounded-b-none lg:rounded-r-2xl lg:rounded-br-2xl">
+                <section className="p-4 space-y-4 bg-secondarybg lg:w-1/2 rounded-b-2xl lg:rounded-b-none lg:rounded-r-2xl lg:rounded-br-2xl">
                     <h1 className="text-primarybg text-lg font-bold md:text-2xl">
                         {project.title}
                     </h1>

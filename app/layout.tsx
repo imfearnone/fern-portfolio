@@ -15,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fernan Retardo",
+  title: "Fernan Retardo | Portfolio",
   description: "Modern and Minimalist Portfolio",
 };
 
